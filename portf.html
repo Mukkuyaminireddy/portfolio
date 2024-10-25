@@ -3,97 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* General container */
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* About Section */
+        #about {
+            text-align: center;
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        #about p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        /* Education, Skills, Projects Section */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Skill section styling */
+        #skills ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #skills ul li {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        /* Projects Section */
+        #projects ul {
+            padding-left: 0;
+        }
+
+        #projects ul li {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        #certificates ul {
+            padding-left: 0;
+        }
+
+        #certificates ul li {
+            margin-bottom: 10px;
+        }
+        #contact {
+            text-align: center;
+            background-color: #34495e;
+            color: white;
+        }
+
+        #contact p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>MY PORTFOLIO</h1>
-            <nav>
-                <ul>
-                    <li><a href="about">About</a></li>
-                    <li><a href="education">Education</a></li>
-                    <li><a href="internships">Internships</a></li>
-                    <li><a href="skills">Skills</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm M.Yamini,a skilled full stack developer with exertise in html,css,javascript,java,sql.I am a hard working,dedicated and always willing to learn new skills.</p>
+            <p>Hello! I am a B.Tech student passionate about technology and programming. Below are my academic details, skills, projects, and other relevant information.</p>
         </div>
     </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>High School</h3>
-                <p>School name:xxxx High school</p>
-                <p>Year of completion and Location:2019|xxxx,xxxx dist</p>
-                <p>percentage:92%</p>
-            </div>
-            <div class="education-item">
-                <h3>Intermediate</h3>
-                <p>college name:Narayana IIT Girls junior college</p>
-                <p>college Location:Bachupally</p>
-                <p>Year of completion:2021</p>
-            </div>
-            <div class="education-item">
-                <h3>BTech</h3>
-                <p>College Name:Sreenidhi institute of Science and Technology</p>
-                <p>Location:Gatkesar</p>
-                <p>Branch:IT</p>
-                <p>Year of Completion:2025</p>
-                <p>Percentage:8.94</p>
-            </div>
-        </div>
+    
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>10th Grade:</strong>92%</li>
+            <li><strong>12th Grade:</strong>986 </li>
+            <li><strong>B.Tech CGPA:</strong>8.94</li>
+        </ul>
     </section>
 
-    <section id="internships">
-        <div class="container">
-            <h2>Internships</h2>
-            <div class="internship">
-                <h3>Internship 1</h3>
-                <p>AI-ML Virtual Internship(Amazon AWS)</p>
-            </div>
-        </div>
+   
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>c</li>
+            <li>DSA</li>
+            <li>HTML & CSS</li>
+            <li>python basics</li>
+            <li>SQL</li>
+        </ul>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java</li>
-                <li>DSA</li>
-                <li>SQL</li>
-                
-            </ul>
-        </div>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Snake Game in Java:</strong> Developed a classic Snake Game using Java, featuring real-time movement, game-over conditions, and a scoring system.</li>
+            <li><strong>sentiment analysis on flipkart Reviews</strong> By using ML algorithms analysed the product state by using reviews</li>
+        </ul>
+    </section>
+
+    <section id="certificates" class="container">
+        <h2>Certificates</h2>
+        <ul>
+            <li>Hackathon Participation</li>
+            <li>Pearson Me pro</li>
+            <li>Learned preprocessing and some algorithms and basics in ML</li>
+        </ul>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can contact me via the following methods:</p>
-            <ul>
-                <li>Email: 21311A1xx@sreenidhi.edu.in</li>
-                <li>Phone: +91xxxxxxxxx</li>
-            </ul>
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> XXXXXXXX@gmail.com</p>
+            <p><strong>Phone:</strong>91xxxxxxxx</p>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>& Yamini;All Rights Reserved </p>
-        </div>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
